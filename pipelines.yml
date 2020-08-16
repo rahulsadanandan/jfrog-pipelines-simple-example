@@ -6,6 +6,10 @@ resources:
       path: rahulsadanandan/jfrog-pipelines-simple-example
       branches:
         include: master
+      buildOn:
+        commit: true
+        pullRequestCreate: false
+        tagCreate: false
 
 pipelines:
   - name: pipeline_hello_world
