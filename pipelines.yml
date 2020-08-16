@@ -27,7 +27,9 @@ pipelines:
         configuration:
           inputResources:
             - name: github_private
+              trigger: true
             - name: helm_milestone_nightly_cron
+              trigger: true
         execution:
           onExecute:
             - echo $MY_MESSAGE
