@@ -10,6 +10,10 @@ resources:
         commit: true
         pullRequestCreate: false
         tagCreate: false
+  - name: helm_milestone_nightly_cron
+    type: CronTrigger
+    configuration:
+      interval: '* * * * *'
 
 pipelines:
   - name: pipeline_hello_world
