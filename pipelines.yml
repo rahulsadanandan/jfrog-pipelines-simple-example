@@ -13,7 +13,7 @@ resources:
   - name: helm_milestone_nightly_cron
     type: CronTrigger
     configuration:
-      interval: '5 5 * * *'
+      interval: '* * * * *'
 
 pipelines:
   - name: pipeline_hello_world
