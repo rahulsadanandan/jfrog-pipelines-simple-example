@@ -62,7 +62,7 @@ This file describes special upgrade notes needed at specific versions
            ```bash
            --set xray.mongoUsername=<OLD_MONGO_USERNAME> --set xray.mongoPassword=<OLD_MONGO_PASSWORD> --set xray.mongoUrl="mongodb://<SERVICE_NAME_MONGODB>:27017/?authSource=xray&authMechanism=SCRAM-SHA-1"
            ```
-          d. It will trigger the migration process
+          d. It will trigger the migration process\
           Example:
             ```yaml
             # Create a customvalues.yaml file
